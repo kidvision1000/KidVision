@@ -15,14 +15,14 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <style>
       html, body { height: 100%; background: #0b1220; }
-      body { margin: 0; -webkit-font-smoothing: antialiased; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+      body { margin: 0; -webkit-font-smoothing: antialiased; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans; }
       .container-narrow { max-width: 1200px; margin: 0 auto; }
     </style>
   </head>
   <body>
     <div id="root"></div>
 
-    <script type="text/babel" data-type="module" src="app.jsx"></script>
+    <script type="text/babel" src="app.jsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
